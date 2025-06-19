@@ -10,7 +10,6 @@ CVP_HOSTS = ['10.18.148.95']
 # CVP_HOSTS = ['10.18.163.120']
 USERNAME = 'cvpadmin'
 PASSWORD = 'cvpadmin123!'
-CONTAINER = 'Firewalls'
 
 # Initialize CVP client
 client = CvpClient()
@@ -27,12 +26,20 @@ Author: Khay Kid Chow (June 2025)
 client.connect(CVP_HOSTS, USERNAME, PASSWORD)
 
 # List of : {Device Name, MAC}
-device_info = [
-  {"name": device["fqdn"], "macAddress": device["systemMacAddress"]}
-  for device in client.api.get_devices_in_container(CONTAINER)
-]
+device_info = []
+containers = client.api.get_containers()
+for container in containers['data']:
+  container_name = container['Name']
+  print (f"Searching for devices in container: {container_name}")
+  device_info = device_info + [
+      {"name": device["fqdn"], "macAddress": device["systemMacAddress"]}
+      for device in client.api.get_devices_in_container(container_name)
+    ]
 
+print ()
+print ("Devices found:")
 print (device_info)
+print ()
 
 for info in device_info:
   print (f"Validating Configlets for {info["name"]}")

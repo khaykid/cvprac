@@ -1,0 +1,54 @@
+Searching for devices in container: Tenant
+Searching for devices in container: Undefined
+Searching for devices in container: Internet
+Searching for devices in container: Hosts
+Searching for devices in container: Firewalls
+Searching for devices in container: Routers
+
+Devices found:
+[
+    {'name': 'internet2', 'macAddress': '14:4d:92:e3:e8:1b'},
+    {'name': 'internet1', 'macAddress': '14:37:c7:47:70:4b'},
+    {'name': 'host3', 'macAddress': '14:ac:f2:f2:4a:d1'},
+    {'name': 'host4', 'macAddress': '14:e9:2e:ff:5c:70'},
+    {'name': 'host2', 'macAddress': '14:9b:00:74:ad:9d'},
+    {'name': 'host1', 'macAddress': '14:e1:bd:6f:f9:f3'},
+    {'name': 'firewall1', 'macAddress': '14:3d:5b:bb:1a:cf'},
+    {'name': 'firewall4', 'macAddress': '14:01:82:cf:48:a1'},
+    {'name': 'firewall2', 'macAddress': '14:f4:cf:e0:21:db'},
+    {'name': 'firewall3', 'macAddress': '14:42:8e:22:3e:70'},
+    {'name': 'router1', 'macAddress': '14:6e:e4:4b:40:b1'},
+    {'name': 'router2', 'macAddress': '14:c4:a2:e4:ea:72'}
+]
+
+Validating Configlets for internet2
+No Reconciliation
+Validating Configlets for internet1
+No Reconciliation
+Validating Configlets for host3
+No Reconciliation
+Validating Configlets for host4
+No Reconciliation
+Validating Configlets for host2
+No Reconciliation
+Validating Configlets for host1
+No Reconciliation
+Validating Configlets for firewall1
+Reconcile needed
+Found old reconcile configlet
+Old reconcile configlet removed from device
+Old reconcile configlet deleted
+Need to create a new reconcile configlet
+Reconciliation created: firewall1 RECONCILE
+Reconciliation applied to device
+Validating Configlets for firewall4
+No Reconciliation
+Validating Configlets for firewall2
+No Reconciliation
+Validating Configlets for firewall3
+No Reconciliation
+Validating Configlets for router1
+No Reconciliation
+Validating Configlets for router2
+No Reconciliation
+Execute Tasks
