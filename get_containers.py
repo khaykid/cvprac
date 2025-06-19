@@ -6,8 +6,8 @@ from rich import print
 import yaml
 
 # CVP connection settings
-# CVP_HOSTS = ['10.18.148.95']
-CVP_HOSTS = ['10.18.163.120']
+CVP_HOSTS = ['10.18.148.95']
+# CVP_HOSTS = ['10.18.163.120']
 USERNAME = 'cvpadmin'
 PASSWORD = 'cvpadmin123!'
 

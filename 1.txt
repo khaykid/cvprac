@@ -1,0 +1,14 @@
+[
+    {'name': 'firewall3', 'macAddress': '14:42:8e:22:3e:70'},
+    {'name': 'firewall2', 'macAddress': '14:f4:cf:e0:21:db'},
+    {'name': 'firewall4', 'macAddress': '14:01:82:cf:48:a1'},
+    {'name': 'firewall1', 'macAddress': '14:3d:5b:bb:1a:cf'}
+]
+Validating Configlets for firewall3
+No Reconciliation
+Validating Configlets for firewall2
+No Reconciliation
+Validating Configlets for firewall4
+No Reconciliation
+Validating Configlets for firewall1
+Reconciliation created: firewall1 RECONCILE_9eaa57aeacec45ddb08ad411ca438f64
