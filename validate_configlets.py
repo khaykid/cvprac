@@ -9,7 +9,7 @@ import yaml
 CVP_HOSTS = ['10.18.148.95']
 # CVP_HOSTS = ['10.18.163.120']
 USERNAME = 'cvpadmin'
-PASSWORD = 'cvpadmin123!'
+PASSWORD = 'cvpadmin'
 
 # Initialize CVP client
 client = CvpClient()
